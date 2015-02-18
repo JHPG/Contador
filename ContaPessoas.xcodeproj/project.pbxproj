@@ -17,6 +17,8 @@
 		27A199C31A94B2A8008DC684 /* ContaPessoasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A199C21A94B2A8008DC684 /* ContaPessoasTests.m */; };
 		27A199CF1A94B4F3008DC684 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A199CE1A94B4F3008DC684 /* girl.png */; };
 		27A199D11A94B501008DC684 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A199D01A94B501008DC684 /* boy.png */; };
+		27A199D31A94D1FA008DC684 /* Contador.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A199D21A94D1FA008DC684 /* Contador.m */; };
+		27A199D61A94D821008DC684 /* ContadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A199D51A94D821008DC684 /* ContadorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		27A199C21A94B2A8008DC684 /* ContaPessoasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaPessoasTests.m; sourceTree = "<group>"; };
 		27A199CE1A94B4F3008DC684 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
 		27A199D01A94B501008DC684 /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy.png; sourceTree = "<group>"; };
+		27A199D21A94D1FA008DC684 /* Contador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contador.m; sourceTree = "<group>"; };
+		27A199D41A94D22B008DC684 /* Contador.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contador.h; sourceTree = "<group>"; };
+		27A199D51A94D821008DC684 /* ContadorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContadorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,8 @@
 				27A199B31A94B2A8008DC684 /* Images.xcassets */,
 				27A199B51A94B2A8008DC684 /* LaunchScreen.xib */,
 				27A199A31A94B2A8008DC684 /* Supporting Files */,
+				27A199D21A94D1FA008DC684 /* Contador.m */,
+				27A199D41A94D22B008DC684 /* Contador.h */,
 			);
 			path = ContaPessoas;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			children = (
 				27A199C21A94B2A8008DC684 /* ContaPessoasTests.m */,
 				27A199C01A94B2A8008DC684 /* Supporting Files */,
+				27A199D51A94D821008DC684 /* ContadorTests.m */,
 			);
 			path = ContaPessoasTests;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				27A199AF1A94B2A8008DC684 /* SecondViewController.m in Sources */,
 				27A199A91A94B2A8008DC684 /* AppDelegate.m in Sources */,
 				27A199AC1A94B2A8008DC684 /* FirstViewController.m in Sources */,
+				27A199D31A94D1FA008DC684 /* Contador.m in Sources */,
 				27A199A61A94B2A8008DC684 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A199C31A94B2A8008DC684 /* ContaPessoasTests.m in Sources */,
+				27A199D61A94D821008DC684 /* ContadorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

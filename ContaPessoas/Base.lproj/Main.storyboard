@@ -32,6 +32,9 @@
                                 <state key="normal" image="boy.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickBoy:" destination="9pv-A4-QxB" eventType="touchDown" id="QWF-hu-z2B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-1Z-n65">
                                 <rect key="frame" x="298" y="81" width="111" height="211"/>
@@ -42,6 +45,9 @@
                                 <state key="normal" title="Button" image="girl.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickGirl:" destination="9pv-A4-QxB" eventType="touchDown" id="7bZ-J4-gek"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -75,29 +81,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-pw-isi">
+                                <rect key="frame" x="399" y="155" width="74.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-d8-9Wo">
+                                <rect key="frame" x="399" y="227" width="74.5" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mhu-4X-L9M">
+                                <rect key="frame" x="399" y="293" width="74.5" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Meninos" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-1m-cHD">
+                                <rect key="frame" x="136" y="154" width="209.5" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Meninas" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWx-mv-3OH">
+                                <rect key="frame" x="136" y="227" width="209.5" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Total" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BCx-e7-LoI">
+                                <rect key="frame" x="136" y="292" width="209.5" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdw-cL-Bgf">
+                                <rect key="frame" x="299" y="406" width="54" height="30"/>
+                                <state key="normal" title="Atualiza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Wmf-Ss-Ora"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="height" secondItem="zlZ-pw-isi" secondAttribute="height" id="0UI-Wh-0CC"/>
+                            <constraint firstItem="BCx-e7-LoI" firstAttribute="leading" secondItem="MWx-mv-3OH" secondAttribute="leading" id="13w-Ws-6h4"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="height" secondItem="mhu-4X-L9M" secondAttribute="height" id="4BZ-yh-wQX"/>
+                            <constraint firstAttribute="centerX" secondItem="LCb-d8-9Wo" secondAttribute="centerX" constant="-136.25" id="4rG-nJ-DkZ"/>
+                            <constraint firstItem="BCx-e7-LoI" firstAttribute="leading" secondItem="fk8-1m-cHD" secondAttribute="leading" id="D9s-Cz-OX2"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="leading" secondItem="mhu-4X-L9M" secondAttribute="leading" id="GFQ-vr-yRa"/>
+                            <constraint firstAttribute="centerX" secondItem="fk8-1m-cHD" secondAttribute="centerX" constant="59.25" id="KWR-09-zTG"/>
+                            <constraint firstItem="BCx-e7-LoI" firstAttribute="trailing" secondItem="fk8-1m-cHD" secondAttribute="trailing" id="SDh-fW-JWM"/>
+                            <constraint firstAttribute="centerX" secondItem="BCx-e7-LoI" secondAttribute="centerX" constant="59.25" id="TcR-2R-ddK"/>
+                            <constraint firstAttribute="centerX" secondItem="MWx-mv-3OH" secondAttribute="centerX" constant="59.25" id="UWr-NX-WIB"/>
+                            <constraint firstItem="BCx-e7-LoI" firstAttribute="trailing" secondItem="MWx-mv-3OH" secondAttribute="trailing" id="Uth-HT-MVO"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="leading" secondItem="zlZ-pw-isi" secondAttribute="leading" id="WyN-JN-7yB"/>
+                            <constraint firstAttribute="centerX" secondItem="zlZ-pw-isi" secondAttribute="centerX" constant="-136.25" id="ZH3-t4-akW"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="width" secondItem="zlZ-pw-isi" secondAttribute="width" id="b34-rW-60A"/>
+                            <constraint firstAttribute="centerX" secondItem="mhu-4X-L9M" secondAttribute="centerX" constant="-136.25" id="l6x-YP-ENq"/>
+                            <constraint firstItem="LCb-d8-9Wo" firstAttribute="width" secondItem="mhu-4X-L9M" secondAttribute="width" id="xTe-Z9-CYW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="total" destination="mhu-4X-L9M" id="876-JP-WJk"/>
+                        <outlet property="totalBoys" destination="zlZ-pw-isi" id="K0H-dt-JqF"/>
+                        <outlet property="totalGirls" destination="LCb-d8-9Wo" id="fvt-aK-Oa3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
