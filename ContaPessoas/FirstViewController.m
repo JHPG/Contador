@@ -14,12 +14,13 @@
 @end
 
 @implementation FirstViewController {
-    Contador *contador;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    //contador = [[Contador alloc] init];
+    contador = [Contador sharedInstance];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

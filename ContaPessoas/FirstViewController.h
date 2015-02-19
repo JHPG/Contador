@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contador.h"
 
 @interface FirstViewController : UIViewController
+{
+    Contador *contador;
+}
 
 - (IBAction)clickBoy:(id)sender;
 - (IBAction)clickGirl:(id)sender;

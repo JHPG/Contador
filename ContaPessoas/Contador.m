@@ -15,6 +15,19 @@
     int girl;
 }
 
++(id)sharedInstance
+{
+    static dispatch_once_t obj = 0;
+    __strong static id _sharedObject = nil; //pode ser qualquer nome
+    
+    // Dispara o objeto uma única vez
+    dispatch_once(&obj, ^{
+        _sharedObject = [[self alloc]init];
+    });
+    
+    return _sharedObject;
+}
+
 -(id)init {
     self = [super init];
     if (self) {
@@ -38,7 +51,9 @@
 -(int)getGirls {
     return girl;
 }
-
+-(int)getTotal{
+    return (boy + girl);
+}
 
 
 @end

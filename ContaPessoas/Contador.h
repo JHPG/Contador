@@ -13,6 +13,9 @@
 
 -(int)getBoys;
 -(int)getGirls;
+-(int)getTotal;
+
++(id)sharedInstance;
 
 @end
 
