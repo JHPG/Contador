@@ -39,9 +39,11 @@
 
 - (void)maisUmCueca {
     boy = boy + 1;
+    [_mostrar atualizar];
 }
 - (void)maisUmaGata {
     girl++;
+    [_mostrar atualizar];
 }
 
 -(int)getBoys {

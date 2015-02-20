@@ -438,6 +438,7 @@
 				27A199C81A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A199C91A94B2A8008DC684 /* Build configuration list for PBXNativeTarget "ContaPessoasTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +447,7 @@
 				27A199CB1A94B2A8008DC684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

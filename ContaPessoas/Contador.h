@@ -6,7 +6,16 @@
 //  Copyright (c) 2015 Vinicius Miana. All rights reserved.
 //
 
-@interface Contador : NSObject 
+@protocol MostradorDelegate <NSObject>
+
+-(void) atualizar;
+
+@end
+
+
+@interface Contador : NSObject
+
+@property(nonatomic,assign) id mostrar;
 
 - (void)maisUmCueca;
 - (void)maisUmaGata;
