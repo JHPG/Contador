@@ -8,7 +8,8 @@
 
 @protocol MostradorDelegate <NSObject>
 
--(void) atualizar;
+@required
+-(void) atualiza;
 
 @end
 
