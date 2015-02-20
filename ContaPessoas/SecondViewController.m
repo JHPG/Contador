@@ -21,26 +21,19 @@
     [super viewDidLoad];
     //contador = [[Contador alloc] init];
     contador = [Contador sharedInstance];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
     
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
     _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
- - (IBAction)click:(id)sender {
-    _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
-    _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
-    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
-}
- */
 
 
 
