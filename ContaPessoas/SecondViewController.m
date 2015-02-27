@@ -25,13 +25,6 @@
     [self atualiza];
 }
 
-/*-(void)viewDidAppear:(BOOL)animated {     //---- Solução mais elegante -------
-    
-    _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
-    _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
-    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
-}*/
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
